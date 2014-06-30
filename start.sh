@@ -55,6 +55,12 @@ echo "  >>---------- 开始 ----------"
 echo "  >>---------- 处理protocbuf ----------"
 
 # export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+
+mv ./3rd/pbc/Makefile ./3rd/pbc/Makefile.bak
+mv ./3rd/pbc/binding/lua/Makefile ./3rd/pbc/binding/lua/Makefile.bak
+cp ./3rd/pbcMakefile ./3rd/pbc/Makefile
+cp ./3rd/pbcluaMakefile ./3rd/pbc/binding/lua/Makefile
+
 cd ./3rd/pbc/ && make && cd ./binding/lua/ && make && cd ../../../../ && cp -f ./3rd/pbc/binding/lua/protobuf.lua ./skynet/lualib/ && cp -f ./3rd/pbc/binding/lua/protobuf.so ./skynet/luaclib/
 
 protoc -o ./res/talkbox.pb ./res/talkbox.proto
