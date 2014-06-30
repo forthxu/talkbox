@@ -1,10 +1,10 @@
-talkbox
+uno
 ====
 
-a talkbox build with skynet
+a uno build with skynet
 
-实例
-http://forthxu.com/c/
+about uno
+http://www.baidu.com/s?wd=uno
 
 云风skynet服务端框架研究
 http://forthxu.com/blog/skynet.html
