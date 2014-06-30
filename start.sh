@@ -66,7 +66,7 @@ cd ./3rd/pbc/ && make && cd ./binding/lua/ && make && cd ../../../../ && cp -f .
 protoc -o ./res/talkbox.pb ./res/talkbox.proto
 
 echo "  >>---------- 处理协议 ----------"
-cd ./3rd/p/ && gcc -g -O2 -Wall -I../../skynet/3rd/lua   -fPIC --shared ./lua-p.c -o ./p.so && cd ../../ && cp -f ./3rd/p/p.so ./skynet/luaclib/
+cd ./3rd/p/ && gcc -g -O2 -Wall -I../../skynet/3rd/lua   -fPIC --shared ./lua-p.c -o ./p.so && cd ../../
 
 echo "  >>---------- 进入skynet目录 ----------"
 echo ""
@@ -86,6 +86,10 @@ echo ""
 echo "  >>---------- 编译 ----------"
 echo ""
 make linux;
+echo ""
+echo "  >>---------- 拷贝处理协议 ----------"
+cp -f ../3rd/p/p.so ./luaclib/
+
 echo ""
 echo "  >>---------- 执行 ---------"
 echo ""
