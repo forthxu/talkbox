@@ -61,7 +61,7 @@ mv ./3rd/pbc/binding/lua/Makefile ./3rd/pbc/binding/lua/Makefile.bak
 cp ./3rd/pbcMakefile ./3rd/pbc/Makefile
 cp ./3rd/pbcluaMakefile ./3rd/pbc/binding/lua/Makefile
 
-cd ./3rd/pbc/ && make && cd ./binding/lua/ && make && cd ../../../../ && cp -f ./3rd/pbc/binding/lua/protobuf.lua ./skynet/lualib/ && cp -f ./3rd/pbc/binding/lua/protobuf.so ./skynet/luaclib/
+cd ./3rd/pbc/ && make && cd ./binding/lua/ && make && cd ../../../../
 
 protoc -o ./res/talkbox.pb ./res/talkbox.proto
 
@@ -87,8 +87,10 @@ echo "  >>---------- 编译 ----------"
 echo ""
 make linux;
 echo ""
-echo "  >>---------- 拷贝处理协议 ----------"
+echo "  >>---------- 拷贝协议so模块 ----------"
+cp -f ../3rd/pbc/binding/lua/protobuf.lua ./lualib/ && cp -f ../3rd/pbc/binding/lua/protobuf.so ./luaclib/
 cp -f ../3rd/p/p.so ./luaclib/
+
 
 echo ""
 echo "  >>---------- 执行 ---------"
