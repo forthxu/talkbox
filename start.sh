@@ -52,6 +52,9 @@ run()
 }
 
 echo "  >>---------- 开始 ----------"
+
+git submodule update --init
+
 echo "  >>---------- 处理protocbuf ----------"
 
 # export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
