@@ -98,6 +98,7 @@ cp -f ../3rd/p/p.so ./luaclib/
 echo ""
 echo "  >>---------- 执行 ---------"
 echo ""
-run a ./skynet ../configs/talkbox.cfg
+#run a ./skynet ../configs/talkbox.cfg
+run b ./skynet ../configs/uno.cfg
 echo ""
 echo "  >>---------- 结束 ----------"
