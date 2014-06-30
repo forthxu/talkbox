@@ -1,0 +1,25 @@
+package talkbox;
+message talk_result
+{
+	required int32 id = 1;   		//结果id
+}
+message talk_create
+{
+	required int32 userid = 1;	//角色名id
+	required string name = 2;	//角色名长度
+}
+message talk_users
+{
+	message talk_user
+	{
+		required int32 userid = 1;	//角色名id
+		required string name = 2;	//角色名长度
+	}
+	repeated talk_user users = 1;	//角色列表
+}
+message talk_message
+{
+	required int32 fromuserid = 1;	//角色名id
+	required int32 touserid = 2;	//角色名id
+	required string msg = 3;	//角色名长度
+}
