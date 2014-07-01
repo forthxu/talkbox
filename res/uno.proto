@@ -1,0 +1,148 @@
+package uno;
+//请求登陆服务器，并询问是否已注册
+message CheckID
+{
+	required int32 UID = 1;   			//UID
+	required int32 ServerID = 2;   		//serverid
+	required int32 Time = 3;			//time
+	required int32 CM	= 4;			//防沉迷
+	required string Flag = 5;			//加密验证
+}
+//RequireID ErrorID ResultID  请求加入某个房间 不存在的房间 成功加入某个房间
+message RID
+{
+	required int32 ID = 1;   			//ID类型 成功0 错误1 请求2 结果3
+	optional int32 RID = 1;   			//RequireID ErrorID ResultID
+	optional string string = 2;			//提示文字
+}
+//请求随机名字
+message GetName
+{
+	required string Name = 1;			//随机昵称
+}
+//请求创建角色
+message CreateUserInfo 
+{
+	required string Name = 1;			//昵称
+	required int32 Sex = 2;   			//性别
+	required int32 Hair = 3;			//头发
+	required int32 Eyes = 4;			//眼睛
+	required int32 Clothes = 5;			//衣服
+	required int32 Body = 6;			//身体
+}
+//角色信息
+message UserInfo
+{
+		required int32 UserID = 1;				//玩家ID
+		required int32 Sex = 2;   				//性别
+		required string Name = 3;				//昵称
+		required int32 Level = 4;				//等级
+		required int32 CurrentExp = 5;			//当前经验
+		required int32 MoneyGold = 6;			//钱，金
+		required int32 MoneyCopper = 7;			//钱，铜
+		required int32 Hair = 8;				//头发
+		required int32 Eyes = 9;				//眼睛
+		required int32 Clothes = 10;			//衣服
+		required int32 Body = 11;				//身体
+		required int32 Shadow = 12;				//影子
+		required int32 Background = 13;			//背景
+		required int32 MVP = 14;				//MVP
+		required int32 VIP = 15;				//VIP
+		required int32 PlayTotal = 16;			//玩的总数
+		required int32 PlayWin = 17;			//玩的胜利数
+		required int32 PlayLose = 18;			//玩的失败数
+		required int32 PlayRun = 19;			//玩的逃跑数
+}
+//频道列表
+message ChannelList
+{
+	required int32 NUM = 1;					//频道数量
+	repeated Channel Channels = 2;			//频道数组
+	message Channel
+	{
+		required int32 Index = 1;			//频道index
+		required int32 Type = 2;			//频道类型
+		required int32 Name = 3;			//频道名称
+	}
+}
+//房间列表
+message RoomList
+{
+	
+	required int32 NUM = 1;				//房间数量
+	required int32 Type = 2;			//房间类型
+	repeated Room Rooms = 3;			//房间数组
+	message Room
+	{
+		required int32 Index = 1;			//房间index
+		required int32 Name = 2;			//房间名称
+		required int32 HostUserID = 3;		//房主userid
+		required string HostName = 4;		//房主昵称
+		required int32 HostLevel = 5;		//房主等级
+	}
+}
+//创建房间
+message CreateRoom
+{
+	required int32 Type = 1;			//房间类型
+	required int32 Name = 2;			//房间名称
+}
+//玩家列表
+message UserList
+{
+	required int32 NUM = 1;			//玩家数量
+	repeated User Users = 2;			//玩家数组
+	message User
+	{
+		required int32 UserId = 2;					//玩家ID
+		required int32 Sex = 1;   					//性别
+		required string Name = 3;					//角色名
+		required int32 Level = 4;					//等级
+		required int32 Hair = 5;					//头发
+		required int32 Eyes = 6;					//眼睛
+		required int32 Clothes = 7;					//衣服
+		required int32 Body = 8;					//身体
+		required int32 Shadow = 9;					//影子
+		required int32 Background = 10;				//背景
+		required int32 RoomHost = 11;				//房主
+		required int32 RoleId = 12;					//角色Id
+		required int32 Seat = 13;					//座位
+		required int32 Team = 14;					//队伍
+		required int32 Blood = 15;					//血量
+		required int32 IsMark =16;					//是否有标记要断定
+		required int32 IsLooper = 17;				//是否回合者
+		required int32 IsStoreGas = 18;				//是否有蓄气
+		required int32 IsAcceptAttack = 18;			//是否受到普通攻击
+		required int32 IsAcceptSkill = 20;			//是否受到技能攻击 
+		required int32 IsAcceptMagic = 21;			//是否受到天命攻击
+		required int32 IsHelp = 22;					//是否需要求救
+		required int32 attackNumber = 23;			//普通攻击的次数 
+	}
+}
+//卡牌交流
+message CardList
+{
+	required IndexID = 1;			//服务端index
+	required FromUserID = 2;		//出牌或收牌userid
+	required ToUserID = 3;			//出牌或收牌userid
+	required NUM = 4;				//卡牌数量
+	repeated Card Cards = 5;		//卡牌数组
+	message Card
+	{
+		required ID = 1;			//牌编号，共108张
+		required Type = 2;			//牌类型：普通牌1 反转牌2 跳过牌3 抽两张4 黑牌5 黑牌抽两张（王牌）6
+		required NUM = 3;			//牌面值：普通牌0-9 技能牌（反转牌 跳过牌 抽两张）20 黑牌（黑牌 王牌）50
+		required Color = 4;			//颜色 红、黄、蓝、绿、黑
+	}
+}
+//结算
+message ResultList
+{
+	required Result Win = 1;	//胜利者
+	repeated Result Results = 2;	//结算数组
+	message Result
+	{
+		required UserID = 1;		//userid
+		required Score = 2;			//score 胜利者的得分=失败者的负分相加
+	}
+}
