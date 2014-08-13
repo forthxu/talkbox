@@ -52,28 +52,12 @@ run()
 }
 
 echo "  >>---------- 开始 ----------"
-
-git submodule update --init
-
-echo "  >>---------- 处理protocbuf ----------"
-
-# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
-
-mv ./3rd/pbc/Makefile ./3rd/pbc/Makefile.bak
-mv ./3rd/pbc/binding/lua/Makefile ./3rd/pbc/binding/lua/Makefile.bak
-cp ./3rd/pbcMakefile ./3rd/pbc/Makefile
-cp ./3rd/pbcluaMakefile ./3rd/pbc/binding/lua/Makefile
-
-cd ./3rd/pbc/ && make && cd ./binding/lua/ && make && cd ../../../../
-
-protoc -o ./res/talkbox.pb ./res/talkbox.proto
-
-echo "  >>---------- 处理协议 ----------"
-cd ./3rd/p/ && gcc -g -O2 -Wall -I../../skynet/3rd/lua   -fPIC --shared ./lua-p.c -o ./p.so && cd ../../
+make
 
 echo "  >>---------- 进入skynet目录 ----------"
 echo ""
 cd ${SKYNET_PATH};
+
 #日志目录
 LOG_PATH="../log/"
 if [ ! -x "$LOG_PATH" ]; then
@@ -85,15 +69,6 @@ TMP_PATH="../tmp/"
 if [ ! -x "$TMP_PATH" ]; then
 	mkdir "$TMP_PATH"
 fi
-echo ""
-echo "  >>---------- 编译 ----------"
-echo ""
-make linux;
-echo ""
-echo "  >>---------- 拷贝协议so模块 ----------"
-cp -f ../3rd/pbc/binding/lua/protobuf.lua ./lualib/ && cp -f ../3rd/pbc/binding/lua/protobuf.so ./luaclib/
-cp -f ../3rd/p/p.so ./luaclib/
-
 
 echo ""
 echo "  >>---------- 执行 ---------"
