@@ -3,6 +3,7 @@ SHARED := -fPIC --shared
 CFLAGS = -g -O2 -Wall -I$(LUA_INC)
 
 PBC_PATH = ./3rd/pbc
+PBC_LIB = $(PBC_PATH)/build/libpbc.a
 
 SKYNET_PATH ?= skynet
 LUA_INC ?= $(SKYNET_PATH)/3rd/lua
@@ -10,11 +11,13 @@ LUA_LIB_PATH ?= $(SKYNET_PATH)/lualib
 LUA_CLIB_PATH ?= $(SKYNET_PATH)/luaclib
 CSERVICE_PATH ?= $(SKYNET_PATH)/cservice
 
+RES_PATH = ./res
+
 ALL_FILE = $(LUA_CLIB_PATH)/protobuf.so $(LUA_LIB_PATH)/protobuf.lua \
 		   $(LUA_CLIB_PATH)/p.so $(LUA_LIB_PATH)/p.lua \
-		   res/talkbox.pb \
+		   $(RES_PATH)/talkbox.pb \
 
-all: $(SKYNET_PATH)/skynet pbc $(ALL_FILE)
+all: $(SKYNET_PATH)/skynet $(PBC_LIB) $(ALL_FILE)
 	@:
 	
 
@@ -26,23 +29,23 @@ $(SKYNET_PATH)/skynet:
 
 # pbc
 
-pbc:
+$(PBC_LIB): $(SKYNET_PATH)/skynet
 	cd $(PBC_PATH) && $(MAKE) "CFLAGS = -O2 -fPIC" lib
 
-$(LUA_CLIB_PATH)/protobuf.so: $(PBC_PATH)/binding/lua/pbc-lua.c pbc $(SKYNET_PATH)/skynet
+$(LUA_CLIB_PATH)/protobuf.so: $(PBC_PATH)/binding/lua/pbc-lua.c
 	gcc $(CFLAGS) $(SHARED) -o $@ -I$(PBC_PATH) -L$(PBC_PATH)/build -lpbc $<
 
 $(LUA_LIB_PATH)/protobuf.lua: $(PBC_PATH)/binding/lua/protobuf.lua $(LUA_CLIB_PATH)/protobuf.so
 	cp -f $< $@
-
-res/talkbox.pb: res/talkbox.proto $(LUA_LIB_PATH)/protobuf.lua $(LUA_CLIB_PATH)/protobuf.so
-	protoc -o $@ $<
 
 $(LUA_CLIB_PATH)/p.so: ./3rd/p/lua-p.c
 	gcc $(CFLAGS) $(SHARED) -o $@ $<
 
 $(LUA_LIB_PATH)/p.lua: ./3rd/p/lua-p.c $(LUA_CLIB_PATH)/p.so
 	cp -f $< $@
+
+$(RES_PATH)/talkbox.pb: $(RES_PATH)/talkbox.proto
+	protoc -o $@ $<
 
 clean:
 	rm -f $(ALL_FILE)
