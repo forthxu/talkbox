@@ -3,6 +3,8 @@ talkbox
 
 a talkbox build with skynet
 
+download flash client src http://pan.baidu.com/s/1sjscngT
+
 实例
 http://forthxu.com/c/
 
