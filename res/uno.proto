@@ -3,8 +3,8 @@ package uno;
 message CheckID
 {
 	required int32 UID = 1;   			//UID
-	required int32 ServerID = 2;   		//serverid
-	required int32 Time = 3;			//time
+	required int32 ServerID = 2;   		//ServerID
+	required int32 Time = 3;			//Time
 	required int32 CM	= 4;			//防沉迷
 	required string Flag = 5;			//加密验证
 }
@@ -33,7 +33,7 @@ message CreateUserInfo
 //角色信息
 message UserInfo
 {
-		required int32 UserID = 1;				//玩家ID
+		required int32 UserID = 1;				//UserID
 		required int32 Sex = 2;   				//性别
 		required string Name = 3;				//昵称
 		required int32 Level = 4;				//等级
@@ -76,7 +76,7 @@ message RoomList
 	{
 		required int32 Index = 1;			//房间index
 		required int32 Name = 2;			//房间名称
-		required int32 HostUserID = 3;		//房主userid
+		required int32 HostUserID = 3;		//房主UserID
 		required string HostName = 4;		//房主昵称
 		required int32 HostLevel = 5;		//房主等级
 	}
@@ -94,7 +94,7 @@ message UserList
 	repeated User Users = 2;			//玩家数组
 	message User
 	{
-		required int32 UserId = 2;					//玩家ID
+		required int32 UserId = 2;					//UserId
 		required int32 Sex = 1;   					//性别
 		required string Name = 3;					//角色名
 		required int32 Level = 4;					//等级
@@ -123,8 +123,8 @@ message UserList
 message CardList
 {
 	required IndexID = 1;			//服务端index
-	required FromUserID = 2;		//出牌或收牌userid
-	required ToUserID = 3;			//出牌或收牌userid
+	required FromUserID = 2;		//出牌UserID 系统0
+	required ToUserID = 3;			//收牌UserID 系统0
 	required NUM = 4;				//卡牌数量
 	repeated Card Cards = 5;		//卡牌数组
 	message Card
@@ -142,7 +142,7 @@ message ResultList
 	repeated Result Results = 2;	//结算数组
 	message Result
 	{
-		required UserID = 1;		//userid
-		required Score = 2;			//score 胜利者的得分=失败者的负分相加
+		required UserID = 1;		//UserID
+		required Score = 2;			//Score 胜利者的得分=失败者的负分相加
 	}
 }
