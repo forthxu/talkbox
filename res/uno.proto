@@ -11,9 +11,9 @@ message CheckID
 //RequireID ErrorID ResultID  请求加入某个房间 不存在的房间 成功加入某个房间
 message RID
 {
-	required int32 ID = 1;   			//ID类型 成功0 错误1 请求2 结果3
+	required int32 ID = 1;   			//ID类型 成功0 失败1 错误2 请求3 结果4
 	optional int32 RID = 1;   			//RequireID ErrorID ResultID
-	optional string string = 2;			//提示文字
+	optional string TIP = 2;			//提示文字
 }
 //请求随机名字
 message GetName
