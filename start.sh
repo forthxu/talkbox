@@ -1,6 +1,4 @@
 #!/bin/bash
-# echo "please input port:" 
-# read PORT
 
 #skynet目录
 SKYNET_PATH="./skynet/"
@@ -53,11 +51,10 @@ run()
 
 echo "  >>---------- 开始 ----------"
 
+# 初始化子项目
 git submodule update --init
 
 echo "  >>---------- 处理protocbuf ----------"
-
-# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 
 mv ./3rd/pbc/Makefile ./3rd/pbc/Makefile.bak
 mv ./3rd/pbc/binding/lua/Makefile ./3rd/pbc/binding/lua/Makefile.bak
@@ -66,6 +63,7 @@ cp ./3rd/pbcluaMakefile ./3rd/pbc/binding/lua/Makefile
 
 cd ./3rd/pbc/ && make && cd ./binding/lua/ && make && cd ../../../../
 
+# 生成协议
 protoc -o ./res/talkbox.pb ./res/talkbox.proto
 
 echo "  >>---------- 处理协议 ----------"

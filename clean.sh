@@ -5,9 +5,9 @@
 #skynet目录
 SKYNET_PATH="./skynet/"
 
-git checkout . && git clean -xdf
+git checkout . && git clean -xndf
 cd ${SKYNET_PATH};
-git checkout . && git clean -xdf
+git checkout . && git clean -xndf
 
 #日志目录
 LOG_PATH="../log/"
