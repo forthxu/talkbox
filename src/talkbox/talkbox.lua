@@ -1,5 +1,5 @@
 local skynet = require "skynet"
-local redis = require "redis"
+--local redis = require "redis"
 local netpack = require "netpack"
 local socket = require "socket"
 p=require("p.core")
