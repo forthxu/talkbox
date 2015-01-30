@@ -9,6 +9,6 @@ skynet主要工作是管理注册服务，并开启多线程协调服务之间�
 
 skynet一般用于开发游戏服务端程序。
 
-下载[skynet简介.ppt](/static/ppt/skynet_summary.ppt)
+下载[skynet简介.ppt](../static/ppt/skynet_summary.ppt)
 
-![skynet logo](/static/logo/skynet_b.png)
+![skynet logo](../static/logo/skynet_b.png)

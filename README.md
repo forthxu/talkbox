@@ -1,4 +1,4 @@
-![skynet logo](/static/logo/skynet.png)
+![skynet logo](static/logo/skynet.png)
 
 skynet入门实践
 ====
