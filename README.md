@@ -1,3 +1,6 @@
+### skynet学习 http://forthxu.github.io/talkbox/index.html
+参与编写可以fork分支 https://github.com/forthxu/talkbox/tree/gh-pages-source
+
 talkbox
 ====
 
