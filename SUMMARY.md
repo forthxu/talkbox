@@ -11,7 +11,7 @@
  - [snlua模块](skynet/snlua.md)
  - [snlua提供lua api的模块接口](skynet/luaapi.md)
  - [lua形式的模块](skynet/luamodule.md)
-* [skynet wiki](skynetwiki/README.md)
+* [skynet wiki](skynet/skynetwiki.md)
  - [Blogs](skynetwiki/Blogs.md)
  - [Bootstrap](skynetwiki/Bootstrap.md)
  - [Build](skynetwiki/Build.md)
