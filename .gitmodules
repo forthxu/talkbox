@@ -1,0 +1,3 @@
+[submodule "skynetwiki"]
+	path = skynetwiki
+	url = git@github.com:cloudwu/skynet.wiki.git

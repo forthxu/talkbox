@@ -3,9 +3,15 @@
 skynet入门实践
 ====
 
-skynet是云风编写***轻量级服务端底层管理框架***，一般用于开发游戏服务端程序。
+[skynet](https://github.com/cloudwu/skynet)是[云风](http://blog.codingnow.com/)编写的***轻量级服务端底层管理框架***，一般用于开发游戏服务端程序。
 
 本书主要适用于新手入门及其他人员逻辑整理。
+
+##### skynet交流
+
+QQ群：340504014
+
+中文邮件列表: https://groups.google.com/d/forum/skynet-users
 
 ##### 参与编写
 
