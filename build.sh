@@ -1,4 +1,5 @@
 #!/bin/bash
+git submodule update
 gitbook init
 gitbook build --output=../talkbox_gh-pages
 DATA_SECOND=`date +%Y-%m-%d-%H-%M-%S`
