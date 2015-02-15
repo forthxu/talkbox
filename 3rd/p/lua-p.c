@@ -80,6 +80,7 @@ static int _unpack(lua_State *L)
 	// Convert(buffer[5], 2);printf("\n\n");
 	// printf("version:%u protocol:%u size:%zu msg:%s\r\n",v,p,size-6,msg);
 	// Convert(p, 2);printf("\n\n");
+	free(buffer);
 	
 	lua_newtable(L);//ÐÂ½¨table
 	
@@ -127,6 +128,7 @@ static int _pack(lua_State *L)
 	
 	memcpy(buffer+6, msg, size);
 	lua_pushlstring(L, (const char *)buffer, size+6);
+	free(buffer);
 	return 1;
 }
 
