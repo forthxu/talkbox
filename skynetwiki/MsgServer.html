@@ -1,0 +1,1149 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
+        <title>MsgServer | skynet入门实践</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.5.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+        
+    
+    
+    <link rel="next" href="../skynetwiki/Multicast.html" />
+    
+    
+    <link rel="prev" href="../skynetwiki/LuaAPI.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="2.16" data-basepath=".." data-revision="1427256115780">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="skynet/README.html">
+            
+                
+                    <a href="../skynet/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         skynet介绍
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="skynet/install.html">
+            
+                
+                    <a href="../skynet/install.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         skynet安装
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="skynet/structure.html">
+            
+                
+                    <a href="../skynet/structure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         skynet目录结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="skynet/logic.html">
+            
+                
+                    <a href="../skynet/logic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         skynet工作逻辑
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="skynet/server.html">
+            
+                
+                    <a href="../skynet/server.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         skynet服务管理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="skynet/queue.html">
+            
+                
+                    <a href="../skynet/queue.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         skynet消息队列
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="skynet/socket.html">
+            
+                
+                    <a href="../skynet/socket.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         skynet数据接收处理
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.7" data-path="skynet/module.html">
+            
+                
+                    <a href="../skynet/module.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                         skynet模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8" data-path="skynet/logger.html">
+            
+                
+                    <a href="../skynet/logger.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                         从logger模块说起
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.9" data-path="skynet/masterANDharbor.html">
+            
+                
+                    <a href="../skynet/masterANDharbor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                         master和harbor模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.10" data-path="skynet/snlua.html">
+            
+                
+                    <a href="../skynet/snlua.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                         snlua模块
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.11" data-path="skynet/luaapi.html">
+            
+                
+                    <a href="../skynet/luaapi.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                         snlua提供lua api的模块接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.12" data-path="skynet/luamodule.html">
+            
+                
+                    <a href="../skynet/luamodule.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.</b>
+                        
+                         lua形式的模块
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="skynet/skynetwiki.html">
+            
+                
+                    <a href="../skynet/skynetwiki.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         skynet wiki
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="skynetwiki/Blogs.html">
+            
+                
+                    <a href="../skynetwiki/Blogs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Blogs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="skynetwiki/Bootstrap.html">
+            
+                
+                    <a href="../skynetwiki/Bootstrap.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Bootstrap
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="skynetwiki/Build.html">
+            
+                
+                    <a href="../skynetwiki/Build.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         Build
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="skynetwiki/Centos 6.x 下编译Skynet 需要安装的依赖.html">
+            
+                
+                    <a href="../skynetwiki/Centos 6.x 下编译Skynet 需要安装的依赖.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         Centos 6.x 下编译Skynet 需要安装的依赖
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="skynetwiki/Cluster.html">
+            
+                
+                    <a href="../skynetwiki/Cluster.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         Cluster
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="skynetwiki/CodeCache.html">
+            
+                
+                    <a href="../skynetwiki/CodeCache.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         CodeCache
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.7" data-path="skynetwiki/Community.html">
+            
+                
+                    <a href="../skynetwiki/Community.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                         Community
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.8" data-path="skynetwiki/Config.html">
+            
+                
+                    <a href="../skynetwiki/Config.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                         Config
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.9" data-path="skynetwiki/DataCenter.html">
+            
+                
+                    <a href="../skynetwiki/DataCenter.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                         DataCenter
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.10" data-path="skynetwiki/FAQ.html">
+            
+                
+                    <a href="../skynetwiki/FAQ.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                         FAQ
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.11" data-path="skynetwiki/GateServer.html">
+            
+                
+                    <a href="../skynetwiki/GateServer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                         GateServer
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.12" data-path="skynetwiki/Home.html">
+            
+                
+                    <a href="../skynetwiki/Home.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                         Home
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.13" data-path="skynetwiki/Http.html">
+            
+                
+                    <a href="../skynetwiki/Http.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                         Http
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.14" data-path="skynetwiki/LoginServer.html">
+            
+                
+                    <a href="../skynetwiki/LoginServer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.14.</b>
+                        
+                         LoginServer
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.15" data-path="skynetwiki/LuaAPI.html">
+            
+                
+                    <a href="../skynetwiki/LuaAPI.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.15.</b>
+                        
+                         LuaAPI
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="2.16" data-path="skynetwiki/MsgServer.html">
+            
+                
+                    <a href="../skynetwiki/MsgServer.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.16.</b>
+                        
+                         MsgServer
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.17" data-path="skynetwiki/Multicast.html">
+            
+                
+                    <a href="../skynetwiki/Multicast.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.17.</b>
+                        
+                         Multicast
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.18" data-path="skynetwiki/MySQL.html">
+            
+                
+                    <a href="../skynetwiki/MySQL.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.18.</b>
+                        
+                         MySQL
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.19" data-path="skynetwiki/Profile.html">
+            
+                
+                    <a href="../skynetwiki/Profile.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.19.</b>
+                        
+                         Profile
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.20" data-path="skynetwiki/Queue.html">
+            
+                
+                    <a href="../skynetwiki/Queue.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.20.</b>
+                        
+                         Queue
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.21" data-path="skynetwiki/ShareData.html">
+            
+                
+                    <a href="../skynetwiki/ShareData.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.21.</b>
+                        
+                         ShareData
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.22" data-path="skynetwiki/Snax.html">
+            
+                
+                    <a href="../skynetwiki/Snax.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.22.</b>
+                        
+                         Snax
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.23" data-path="skynetwiki/SocketChannel.html">
+            
+                
+                    <a href="../skynetwiki/SocketChannel.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.23.</b>
+                        
+                         SocketChannel
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.24" data-path="skynetwiki/Socket.html">
+            
+                
+                    <a href="../skynetwiki/Socket.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.24.</b>
+                        
+                         Socket
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.25" data-path="skynetwiki/UniqueService.html">
+            
+                
+                    <a href="../skynetwiki/UniqueService.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.25.</b>
+                        
+                         UniqueService
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.26" data-path="skynetwiki/Uses.html">
+            
+                
+                    <a href="../skynetwiki/Uses.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.26.</b>
+                        
+                         Uses
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="example/README.html">
+            
+                
+                    <a href="../example/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         skynet例子
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="talkbox/README.html">
+            
+                
+                    <a href="../talkbox/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         talkbox
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1.1" data-path="talkbox/about.html">
+            
+                
+                    <a href="../talkbox/about.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.1.</b>
+                        
+                         talkbox介绍
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.2" data-path="talkbox/install.html">
+            
+                
+                    <a href="../talkbox/install.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.2.</b>
+                        
+                         talkbox服务端的安装和客户端的使用
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.3" data-path="talkbox/listen.html">
+            
+                
+                    <a href="../talkbox/listen.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.3.</b>
+                        
+                         talkbox监听获取
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.1.4" data-path="talkbox/logic.html">
+            
+                
+                    <a href="../talkbox/logic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.4.</b>
+                        
+                         talkbox逻辑结构
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="example/avalon.html">
+            
+                
+                    <a href="../example/avalon.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         A tool for avalon boardgame
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="other/README.html">
+            
+                
+                    <a href="../other/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         其他
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="other/reference.html">
+            
+                
+                    <a href="../other/reference.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         学习参考资料
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="other/protobuf.html">
+            
+                
+                    <a href="../other/protobuf.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         protobuf
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="other/lua53.html">
+            
+                
+                    <a href="../other/lua53.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         Lua 5.3 参考手册
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="end/README.html">
+            
+                
+                    <a href="../end/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         结束
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >skynet入门实践</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_39">
+                    
+                        <h2 id="">设计</h2>
+<p>snax.msgserver 是一个基于消息请求和回应模式的网关服务器模板。它基于 snax.gateserver 定制，可以接收客户端发起的请求数据包，并给出对应的回应。</p>
+<p>和 service/gate.lua 不同，用户在使用它的时候，一个用户的业务处理不基于连接。即，它不把连接建立作为用户登陆、不在连接断开时让用户登出。用户必须显式的登出系统，或是业务逻辑设计的超时机制导致登出。</p>
+<p>和传统的 HTTP 服务不同。在同一个连接上，用户可以发起任意多个请求，并接收多次回应。请求和回应次序不必保证一致，所以内部用 session 来关联请求和回应。回应不保证和请求次序相同，也方便在同一个 TCP 连接上发起一些服务器需要很长时间的请求，而不会阻塞后续的快速响应。</p>
+<p>在请求回应模式下，服务器无法单向向客户端推送消息。但可以很容易模拟这种业务。你只需要在登入系统后，立刻发起一个应用层协议要求服务器返回给你最近需要推送给你的消息；如果服务器暂时没有消息推送给客户端，那么只需要简单的挂起这个 session ，待有消息推送时，服务器通过这个 session 返回即可。</p>
+<p>和一般的长连接服务也不同。当客户端和服务器失去连接后，只需要简单的重新接入，就可以继续工作。在 snax.msgserver 的实现中，我们要求客户端和服务器同时只保证一条有效的通讯连接，但你可以轻易扩展成多条（但意义不大，因为 session 可以保证慢请求不会阻塞快请求的回应）并发。</p>
+<h2 id="">架构</h2>
+<p>消息服务器 snax.msgserver (M) 必须和 [[LoginServer]] (L) 一起使用。用户 C 的业务流程通常是这样的：</p>
+<ol>
+<li>C 向 L 表明想登陆 M。</li>
+<li>L 验证 C 的身份，交换 secret ，并转告 M 说 C 想登陆。</li>
+<li>M 确认 C 的 secret ，做好登陆准备，生成一个 subid (subid 用于多重登陆）。</li>
+<li>L 构造当次登陆用的用户名（用 uid 和 subid 联合生成）返回给 C 向 C 确认可以登陆。</li>
+<li>C 以这个用户名加上一个自增序列号（用于断线重连），利用 secret 签名和 M 握手接入。</li>
+<li>M 检查签名是否正确，以及序列号是否使用过（一次有效）。然后等待 M 的请求，并在当前连接上回应。</li>
+</ol>
+<p>如果 C 和 M 断开连接，并不意味着用户从系统登出，这时 C 可以自增序列号，重新和 M 握手。这称为修复连接，C 不需要重复进行和 L 的登陆认证流程。</p>
+<p>在前次连接上，C 向 M 发送的请求，M 会缓存一部分。如果连接修复后，C 向 M 发起过去用过的 session 号的请求，M 将之前缓存的回应包直接发回，而不去重新做一次业务处理。但是，在同一连接上发起的相同的 session ，后一次会覆盖前一次，请求都会交给业务层处理。业务层收到相同的 session ，可以任务是前一次的 session 的回应已经被客户端收到，所以复用了这个 session ；因为在同一条 TCP 连接上，不会发生数据丢失的情况；一旦有回应包没有发到，只可能是连接断开，新的连接可以重新发起相同的请求。</p>
+<p>注：这里 cache 最近的一部分请求的回应可以满足大部分需求。同时也可以约定 session 的自增性，发现请求过去的 session 而没有缓存时，强制将用户登出。</p>
+<p>C 也可以重新去 L 处交换新的用户名和 serect 。这种情况下，L 会通知 M 将登陆状态中的 C 登出，更新新版的 serect ，重置所有之前的请求 session 和回应缓存。最后让 C 重新登陆。</p>
+<h2 id="">使用</h2>
+<p>和 [[GateServer]] 和 [[LoginServer]] 一样，snax.msgserver 只是一个模板，你还需要自定义一些业务相关的代码，才是一个完整的服务。</p>
+<pre><code class="lang-lua"><span class="hljs-keyword">local</span> msgserver = <span class="hljs-built_in">require</span> <span class="hljs-string">"snax.msgserver"</span>
+</code></pre>
+<p>你需要注册这样一些 handler 来处理一些事件：</p>
+<pre><code class="lang-lua"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">server.login_handler</span><span class="hljs-params">(uid, secret)</span></span>
+</code></pre>
+<p>当一个用户登陆后，登陆服务器会转交给你这个用户的 uid 和 serect ，最终会触发 login_handler 方法。在这个函数里，你需要做的是判定这个用户是否真的可以登陆。（一般是可以的，如果想阻止用户多重登陆，在登陆服务器里就完成了）</p>
+<p>然后为用户生成一个 subid ，如果你的用户同时只允许一个实例存在于系统中，你可以生成固定的 subid （但建议还是生成不同的）。使用 <code>msgserver.username(uid, subid, servername)</code> 可以得到这个用户这次的登陆名。这里 servername 是当前登陆点的名字。</p>
+<p>接着你应该做好用户进入的准备。常规做法是启动一个 agent 服务，然后命令它从数据库加载这个用户的数据。如果启动 agent 需要消耗大量的 CPU 时间，你也可以预先启动好多份 agent 放在一个池中，这里只需要简单的取出一个可用的空 agent 即可。</p>
+<p>当一切准备好后，把 subid 返回。</p>
+<p>在这个过程中，如果你发现一些意外情况，不希望用户进入，只需要用 error 抛出异常。</p>
+<pre><code class="lang-lua"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">server.logout_handler</span><span class="hljs-params">(uid, subid)</span></span>
+</code></pre>
+<p>当一个用户想登出时，这个函数会被调用，你可以在里面做一些状态清除的工作。这个事件通常是由 agent 的消息触发。</p>
+<pre><code class="lang-lua"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">server.kick_handler</span><span class="hljs-params">(uid, subid)</span></span>
+</code></pre>
+<p>当外界（通常是登陆服务器）希望让一个用户登出时，会触发这个事件。通常你需要在里面通知 agent 将用户数据写数据库，并且让它在善后工作完成后，发起一个 logout 消息（最终会触发 <code>logout_handler</code>）</p>
+<pre><code class="lang-lua"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">server.disconnect_handler</span><span class="hljs-params">(username)</span></span>
+</code></pre>
+<p>当用户的通讯连接断开后，会触发这个事件。你可以不关心这个事件，也可以利用这个事件做超时管理。（比如断开连接后一定时间不重新连回来就主动登出。</p>
+<pre><code class="lang-lua"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">server.request_handler</span><span class="hljs-params">(username, msg, sz)</span></span>
+</code></pre>
+<p>如果用户提起了一个请求，就会被这个 <code>request_handler</code> 捕获到。这里隐藏了 session 信息，因为你可以在这个函数中调用 skynet.call 等 RPC 调用，但一般的做法是简单的把 msg,sz 转发给 agent 即可。这里使用的是 client 协议通道，agent 只需要处理这个协议通道，具体的业务层通讯协议并无限制。</p>
+<p>等请求处理完后，只需要返回一个字符串，这个字符串会回到框架，加上 session 回应客户端。这个函数中允许抛出异常，框架会正确的捕获这个异常，并通过协议通知客户端。</p>
+<pre><code class="lang-lua"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">server.register_handler</span><span class="hljs-params">(name)</span></span>
+</code></pre>
+<p>因为 snax.msgserver 实际上是 snax.gateserver 的一个特殊实现。同样有打开监听端口的指令。在打开端口时，会触发这个 <code>register_handler</code> name 是在配置信息中配置的当前登陆点的名字，你需要把这个名字注册到登陆服务器。登陆服务器就可以按约定，在用户登陆你的时候把消息转发给你。</p>
+<h3 id="api">api</h3>
+<p>以下 api 可以在实现上述的 handler 时，在恰当的时机使用：</p>
+<ul>
+<li><code>msgserver.userid(username)</code> : uid, subid, server 把一个登陆名转换为 uid, subid, servername 三元组</li>
+<li><code>msgserver.username(uid, subid, server)</code> : username 把 uid, subid, servername 三元组构造成一个登陆名</li>
+<li><code>msgserver.login(username, secret)</code> 你需要在 <code>login_handler</code> 中调用它，注册一个登陆名对应的 serect</li>
+<li><code>msgserver.logout(username)</code> 让一个登陆名失效（登出），通常在 <code>logout_handler</code> 里调用。</li>
+<li><code>msgserver.ip(username)</code> 查询一个登陆名对应的连接的 ip 地址，如果没有关联的连接，会返回 nil 。</li>
+<li><code>msgserver.start(conf)</code> 启动一个 msgserver 。conf 是配置表。配置表和 [[GateServer]] 相同，但增加一项 servername ，你需要配置这个登陆点的名字。</li>
+</ul>
+<h2 id="">范例</h2>
+<p>你可以在 examples/login/gated.lua 看到一个实现的范例，它可以和 examples/login/logind.lua 协同工作。</p>
+<p>客户端的示范在 examples/login/client.lua 。</p>
+<p>你可以先启动</p>
+<pre><code>./skynet examples/config.login
+</code></pre><p>然后在同一台机器上启动</p>
+<pre><code>lua examples/login/client.lua
+</code></pre><h2 id="wire-protocol">wire protocol</h2>
+<p>基础封包协议遵循的 [[GateServer]] ，即一个 2 字节的包头加内容，以下说明的是内容的编码。</p>
+<p>当一个连接接入后，第一个包是握手包。握手首先由客户端发起：</p>
+<pre><code>base64(uid)@base64(server)#base64(subid):index:base64(hmac)
+</code></pre><p>index 至少是 1 ，每次连接都需要比之前的大。这样可以保证握手包不会被人恶意截获复用。
+hmac 是在登陆环节获得的共识 serect ，对前面一串数据做的挑战确认，具体算法可以见范例代码。</p>
+<p>服务器会针对这次握手做一个回应，回应信息是一行文本：</p>
+<ul>
+<li>404 User Not Found</li>
+<li>403 Index Expired</li>
+<li>401 Unauthorized</li>
+<li>400 Bad Request</li>
+<li>200 OK</li>
+</ul>
+<p>如果握手成功，后续的包就是按照请求回应模式进行：</p>
+<p>客户端发起请求：</p>
+<p>bytes 任意内容
+dword session</p>
+<p>session 原则上以 Big-Endian 方式编码一个数字，但实际上 session 也可以看成是一个四字节的 token ，并无强制要求客户端如何生成和编码。</p>
+<p>服务器回应：</p>
+<p>bytes 内容(或异常信息）
+byte 标记。1 表示正常返回，0 表示异常返回。
+dword session</p>
+<p>session 用于匹配客户端提起的请求。</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../skynetwiki/LuaAPI.html" class="navigation navigation-prev " aria-label="Previous page: LuaAPI"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../skynetwiki/Multicast.html" class="navigation navigation-next " aria-label="Next page: Multicast"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
