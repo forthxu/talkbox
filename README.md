@@ -27,6 +27,8 @@ http://forthxu.com/blog/skynet.html
     cd ../talkbox
     bash start.sh
 ### 客户端
+AS:
 https://github.com/forthxu/talkbox_client
 
-
+cocos2d-x(android有编译好的apk、ios自行编译):
+http://skynetdoc.com/examples.html
