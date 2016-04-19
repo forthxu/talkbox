@@ -1,4 +1,6 @@
 ### skynet学习 http://forthxu.github.io/talkbox/index.html
+
+[![Join the chat at https://gitter.im/forthxu/talkbox](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/forthxu/talkbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 参与编写可以fork分支 https://github.com/forthxu/talkbox/tree/gh-pages-source
 
 talkbox
